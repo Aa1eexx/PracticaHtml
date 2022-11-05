@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arvel</title>
+    <link rel="shortcut icon" href="arvel.ico" />
+    <style>
+        *{
+            font-family:'Times New Roman', Times, serif;
+        }
+        p{
+            font-weight: bold ;
+        }
+        tbody tr:nth-child(odd) {
+  background-color: #af73a0c9;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e495e4;
+}
+
+tbody tr {
+  background-image: url(noise.png);
+}
+
+table {
+  background-color: #3363ff6e;
+}
+
+button{   
+border: 1px solid #2e518b; /*anchura, estilo y color borde*/
+padding: 10px; /*espacio alrededor texto*/
+background-color: #2e518b; /*color botón*/
+color: #ffffff; /*color texto*/
+text-decoration: none; /*decoración texto*/
+text-transform: uppercase; /*capitalización texto*/
+font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+border-radius: 50px; /*bordes redondos*/
+}
+.right{
+margin-right: 0%;
+margin-left: 80%;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pasteleria ARVEL, desde 2022</h1>
+    </header>
+    <a href="./administrador.html"><button class="right">Administrador</button></a><br>
+<img src="./arvel logo.png" alt="Logo Pasteleria Arvel" width="20%" height="20%">
+<hr>
+<section>
+<h2>Menú</h2>
+<h3>Ingredientes</h3>
+<ul>
+    <li>Fresa..............................$20</li>
+    <li>Durazno..........................$20</li>
+    <li>Nuez...............................$30</li>
+    <li>Chocolate........................$40</li>
+
+</ul>
+<h3>Pasteles</h3>
+<ul>
+    <li>Pastel de 3 leches.........................$40</li>
+    <li>Pastel de zanahoria.......................$30</li>
+    <li>Pastel de chocolate.......................$30</li>
+    <li>Pastel de Vainilla..........................$30</li>
+</ul>
+<h3>Combos</h3>
+<dl>
+    <dt><b>Combo 1-------------------$50</b></dt>
+    <dd>Pastel con 2 ingredientes</dd>
+    <dt><b>Combo 2-------------------$60</b></dt>
+    <dd>Pastel con 3 ingredientes</dd>
+    <dt><b>Combo 3-------------------$70</b></dt>
+    <dd>Pastel con 4 ingredientes</dd>
+    <dt><b>Combo 4-------------------$80</b></dt>
+    <dd>Pastel con Ingredientes extras</dd>
+</dl>
+</section>
+<hr>
+<section>
+<h2>Ubicación</h2>
+<h3>Sucursales</h3>
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Ubicación</th>
+        <th>Horarios</th>
+    </tr>
+    <tr>
+        <td>Sucursal Aldama</td>
+        <td><a href="https://goo.gl/maps/NQFJr211aY3ozArC6" target="_blank">C. Aldama No. 84A</a></td>
+        <td>Martes a domingo, 8 A.M. - 9 P.M.</td>
+    </tr>
+
+    <tr>
+        <td>Sucursal El Cerrito</td>
+        <td><a href="https://goo.gl/maps/iQtQsDoYcCGqrDk39" target="_blank">C. Alejandro Organista No. 13</a></td>
+        <td>Lunes a domingo, 8 A.M. - 9 P.M.</td>
+    </tr>
+</table>
+</section>
+<hr>
+<section>
+<h2>Pedidos</h2>
+<h3>Haz tu pedido aquí:</h3>
+
+<form action="">
+<p>Elige tu sucursal:</p>
+    <select>
+<option value="Aldama">Sucursal Aldama</option>
+<option value="Elcerrito">Sucursal El Cerrito</option>
+</select>
+
+<p>Elige tus pasteles favoritos:</p>
+<input type="checkbox" id="3leches" name="3leches" value="3Leches">
+<label for="3leches">Pastel de 3 leches</label>
+<input type="number" id="3lechesNumber" name="3lechesNumber" placeholder="¿Cuántos?"><br>
+<input type="checkbox" id="zanahoria" name="zanahoria" value="zanahoria">
+<label for="zanahoria">Pastel de zanahoria</label>
+<input type="number" id="zanahoriaNumber" name="zanahoriaNumber" placeholder="¿Cuántos?"><br>
+<input type="checkbox" id="chocolate" name="chocolate" value="chocolate">
+<label for="chocolate">Pastel de chocolate</label>
+<input type="number" id="PchocolateNumber" name="PchocolateNumber" placeholder="¿Cuántos?"><br>
+<input type="checkbox" id="Vainilla" name="Vainilla" value="Vainilla">
+<label for="Vainilla">Pastel de Vainilla</label>
+<input type="number" id="VainillaNumber" name="VainillaNumber" placeholder="¿Cuántos?"><br>
+
+<p>Combos:</p>
+<input type="checkbox" id="Combo1" name="Combo1" value="Frapuccino">
+<label for="Combo1">Combo 1</label>
+<input type="text" id="Combo1ing" name="Combo1ing" placeholder="Ingredientes"><br>
+<input type="checkbox" id="Combo2" name="Combo2" value="Combo2">
+<label for="Combo2">Combo 2</label>
+<input type="text" id="Combo2ing" name="Combo2ing" placeholder="Ingredientes"><br>
+<input type="checkbox" id="Combo3" name="Combo3" value="Combo3">
+<label for="Combo2">Combo 3</label>
+<input type="text" id="Combo3ing" name="Combo3ing" placeholder="Ingredientes"><br>
+<input type="checkbox" id="Combo4" name="Combo4" value="Combo4">
+<label for="Combo4">Combo 4</label>
+<input type="text" id="Combo4ing" name="Combo4ing" placeholder="Ingredientes"><br>
+
+<p>Seleccione los adornos deseados:</p>
+<input type="checkbox" id="chispaschocolate" name="chispaschocolate" value="chispaschocolate">
+<label for="chispaschocolate">Chispas de chocolate</label><br>
+
+<input type="checkbox" id="Velas" name="velas" value="velas">
+<label for="Velas">Velas</label><br>
+
+<input type="checkbox" id="Figuras" name="figuras" value="figuras">
+<label for="Figuras">Figuras</label><br>
+
+<input type="checkbox" id="Letreros" name="Letreros" value="Letreros">
+<label for="Letreros">Letreros</label><br>
+
+
+<br><label for="name" >Cuál es tu Nombre:</label>
+    <input type="text" id="name" name="name" placeholder="Nombre" />
+
+    <p>Punto de entrega:</p>
+    <input type="radio" id="RadDomicilio" name="entrega">
+    <label for="radDomicilio">Entrega a Domicilio</label>
+    <input type="radio" id="RadSucursal" name="entrega">
+    <label for="RadSucursal">Recoge en Sucursal</label><br>
+
+    <br><label for="domicilio">¿Cuál es tu dirección?:</label>
+    <input type="text" id="domicilio" name="domicilio" placeholder="Domicilio de entrega"/>
+
+    <br><label for="email">¿Cuál es tu correo electrónico?:</label>
+    <input type="email" id="email" name="email" placeholder="E-mail"/>
+
+    <br><label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono"/>
+<br><br><button type="submit">Confirmar</button>
+
+<button type="reset">Borrar</button>
+
+</form>
+</section>
+</body>
+</html>
